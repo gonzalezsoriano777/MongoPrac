@@ -8,7 +8,7 @@ const StocksSchema = new Schema ({
     name: String, // Name of the stock 
     price: {
       type: String,
-      unique: true,
+      unique: true, // meaning this won't be used anywhere else 
     }, // The price for purchasing the stock
     rankForStock: Number, // The rank for the Stock whether it exceeds or it doesn't
     SocialNet: String, // How popular the stock is
