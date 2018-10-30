@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 mongoose.connect('mongodb://mongod345:Hector3463@ds245523.mlab.com:45523/mongo-prac', { useNewUrlParser: true });
 
-const Stocks = new Schema ({
+const StocksSchema = new Schema ({
     name: String, // Name of the stock 
     price: {
       type: String,
@@ -12,7 +12,7 @@ const Stocks = new Schema ({
     }, // The price for purchasing the stock
     rankForStock: Number, // The rank for the Stock whether it exceeds or it doesn't
     SocialNet: String, // How popular the stock is
-    date: { default: Date.now, type: Date.everyWeek} // Date... API used so that it can tell you how it will do per week and shows the previous weeks as well    data: 
+    date: { type: Date, default: Date.now } // Date.everyWeek} // Date... API used so that it can tell you how it will do per week and shows the previous weeks as well    data: 
     
 })
 
